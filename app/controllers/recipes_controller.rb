@@ -9,8 +9,8 @@ class RecipesController < ApplicationController
 
   def new
     @recipe = Recipe.new
-    @recipe.ingredients.build(name:)
-    @recipe.ingredients.build(quantity:)
+    @recipe.ingredients.build(name: name)
+    @recipe.ingredients.build(quantity: quantity)
   end
 
   def create
