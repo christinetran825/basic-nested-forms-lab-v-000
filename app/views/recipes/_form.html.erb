@@ -3,11 +3,8 @@
 
   Ingredients:
   <%= f.fields_for :ingredients do |ingr| %>
-    <%= ingr.label :name %>
-    <%= ingr.text_field :name %>
-    <br>
-    <%= ingr.label :quantity %>
-    <%= ingr.text_field :quantity %>
+    Name: <%= ingr.text_field :name %>
+    Quantity <%= ingr.text_field :quantity %>
     <br>
   <% end %>
 
